@@ -22,8 +22,8 @@ const Home = () => (
 
       <p>
         3. Go to{" "}
-        <Link href="/projects">
-          <a>/projects</a>
+        <Link href="/questions">
+          <a>/questions</a>
         </Link>
       </p>
       <div className="buttons">
