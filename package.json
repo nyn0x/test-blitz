@@ -30,8 +30,8 @@
     "@prisma/cli": "2.1.0",
     "@prisma/client": "2.1.0",
     "blitz": "0.15.3",
-    "react": "0.0.0-experimental-33c3af284",
-    "react-dom": "0.0.0-experimental-33c3af284"
+    "react": "^0.0.0-experimental-33c3af284",
+    "react-dom": "^0.0.0-experimental-33c3af284"
   },
   "devDependencies": {
     "@types/react": "16.9.41",
@@ -47,7 +47,7 @@
     "eslint-plugin-react-hooks": "3.0.0",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
-    "next": "9.3.5",
+    "next": "9.4.4",
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
     "typescript": "3.9.5"
