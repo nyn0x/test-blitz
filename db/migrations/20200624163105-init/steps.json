@@ -3,25 +3,25 @@
   "steps": [
     {
       "tag": "CreateSource",
-      "source": "sqlite"
+      "source": "postgresql"
     },
     {
       "tag": "CreateArgument",
       "location": {
         "tag": "Source",
-        "source": "sqlite"
+        "source": "postgresql"
       },
       "argument": "provider",
-      "value": "\"sqlite\""
+      "value": "\"postgresql\""
     },
     {
       "tag": "CreateArgument",
       "location": {
         "tag": "Source",
-        "source": "sqlite"
+        "source": "postgresql"
       },
       "argument": "url",
-      "value": "\"file:./db.sqlite\""
+      "value": "\"postgresql://test:test@localhost:5432/postgres\""
     },
     {
       "tag": "CreateModel",
