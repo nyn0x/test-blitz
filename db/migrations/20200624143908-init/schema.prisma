@@ -1,21 +1,22 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// datasource sqlite {
-//   provider = "sqlite"
-//   url      = "file:./db.sqlite"
-// }
+datasource sqlite {
+  provider = "sqlite"
+  url = "***"
+}
 
 // SQLite is easy to start with, but if you use Postgres in production
 // you should also use it in development with the following:
-datasource postgresql {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
+//datasource postgresql {
+//  provider = "postgresql"
+//  url = "***"
+//}
 
 generator client {
   provider = "prisma-client-js"
 }
+
 
 // --------------------------------------
 
@@ -28,16 +29,16 @@ model Question {
   id        Int      @default(autoincrement()) @id
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  text      String
-  choices   Choice[]
+  text      String   
+  choices   Choice[] 
 }
 
 model Choice {
   id         Int      @default(autoincrement()) @id
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
-  text       String
+  text       String   
   votes      Int      @default(0)
   question   Question @relation(fields: [questionId], references: [id])
-  questionId Int
+  questionId Int      
 }
