@@ -3,7 +3,7 @@
 
 // datasource sqlite {
 //   provider = "sqlite"
-//   url      = "file:./db.sqlite"
+//   url = "***"
 // }
 
 // SQLite is easy to start with, but if you use Postgres in production
@@ -12,8 +12,8 @@ datasource postgresql {
   provider = "postgresql"
   // DATABASE_URL_1 -> elephantsql
   // DATABASE_URL_2 -> heroku
-  // url      = env("DATABASE_URL_1")
-  url      = env("DATABASE_URL_2")
+  // url = "***"
+  url = "***"
 }
 
 generator client {
